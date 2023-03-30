@@ -760,9 +760,9 @@ export const config = {
         90: 0.9,
         95: 0.95,
         100: 1,
-      },
-    } as const,
-  },
+      }
+    } as const
+  }
 } as const;
 
 type Config = typeof config.theme;

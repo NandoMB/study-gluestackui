@@ -1,1 +1,2 @@
-export { default } from './ActionSheet';
+export { ActionSheet } from './ActionSheet';
+export { StyledActionSheet } from './ActionSheet.styled';

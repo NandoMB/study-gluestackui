@@ -1,6 +1,6 @@
 import { StyleSheet, View, Text } from 'react-native';
 
-export default function Icon() {
+export function Icon() {
   return (
     <View>
       <Text style={styles.title}>Icon</Text>

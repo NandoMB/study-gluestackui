@@ -1,26 +1,18 @@
-import { StyleSheet, SafeAreaView, View, Text } from 'react-native';
-import { Icon, Select } from '../../../gluestack/components';
-import { InfoIcon } from 'lucide-react-native';
+import { StyleSheet, View, Text, Pressable } from 'react-native';
+import SelectDefault from './SelectDefault';
+import SelectCustom from './SelectCustom';
 
-export default function ActionSheetShowcase() {
-  const data = Array(100).fill(0).map((_, index) => ({
-    key: index,
-    label: `Option ${index}`,
-    value: index
-  }));
+export default function SelectShowcase({ nextColorModeName, toggleColorMode }: { nextColorModeName: string, toggleColorMode: () => void }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>ActionSheet Showcase</Text>
-      <Select>
-        <Select.ItemList placeholder="Select">
-          {data.map(item => (
-            <Select.Item key={item.key} value={item.value} label={item.label} />
-          ))}
-        </Select.ItemList>
-        <Select.Icon>
-          <Icon as={InfoIcon} />
-        </Select.Icon>
-      </Select>
+      <View style={styles.header}>
+        <Text style={styles.title}>Select Showcase</Text>
+        <Pressable onPress={toggleColorMode}>
+          <Text style={styles.title}>{nextColorModeName === 'dark' ? '🌛' : '🌞'}</Text>
+        </Pressable>
+      </View>
+      <SelectDefault />
+      <SelectCustom />
     </View>
   );
 }
@@ -28,7 +20,12 @@ export default function ActionSheetShowcase() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 16
+    paddingHorizontal: 16,
+    gap: 16
+  },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between'
   },
   title: {
     paddingTop: 50,

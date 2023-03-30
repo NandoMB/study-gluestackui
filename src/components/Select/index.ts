@@ -1,1 +1,2 @@
-export { default } from './Select';
+export { Select } from './Select';
+export { StyledSelect } from './Select.styled';
