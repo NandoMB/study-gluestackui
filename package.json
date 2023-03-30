@@ -12,14 +12,17 @@
     "@dank-style/react": "latest",
     "@expo/webpack-config": "^18.0.1",
     "@gluestack-ui/actionsheet": "latest",
+    "@gluestack-ui/icon": "^0.1.0",
     "@gluestack-ui/provider": "latest",
     "@gluestack-ui/select": "latest",
     "@react-native-aria/interactions": "^0.2.8",
     "expo": "~48.0.9",
     "expo-status-bar": "~1.4.4",
+    "lucide-react-native": "^0.129.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.71.4",
+    "react-native-svg": "13.4.0",
     "react-native-web": "~0.18.10"
   },
   "devDependencies": {

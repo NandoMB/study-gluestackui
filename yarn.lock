@@ -1538,6 +1538,16 @@
     "@react-native-aria/focus" "^0.2.7"
     react-native-svg "13.4.0"
 
+"@gluestack-ui/icon@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/@gluestack-ui/icon/-/icon-0.1.0.tgz"
+  integrity sha512-byLzdywR9RD6ZTBI0mGZ8SQSzlxguhPg24FNQPbPBquAgUTxjP2dVvduRetRKEC+qPfjCookEqirER0lVl0XBg==
+  dependencies:
+    "@gluestack-ui/react-native-aria" "*"
+    "@gluestack-ui/utils" "*"
+    "@react-native-aria/focus" "^0.2.7"
+    react-native-svg "13.4.0"
+
 "@gluestack-ui/overlay@latest":
   version "0.1.0"
   resolved "https://registry.npmjs.org/@gluestack-ui/overlay/-/overlay-0.1.0.tgz"
@@ -1560,7 +1570,7 @@
     tsconfig "7"
     typescript "^4.9.4"
 
-"@gluestack-ui/react-native-aria@latest":
+"@gluestack-ui/react-native-aria@*", "@gluestack-ui/react-native-aria@latest":
   version "0.1.1"
   resolved "https://registry.npmjs.org/@gluestack-ui/react-native-aria/-/react-native-aria-0.1.1.tgz"
   integrity sha512-9iPXKBTy8Xg1QOxQrQx7uHg7zuH0wCfTq9yysMpVWaq7Zr2NHQcixd1A1QF+o/aKcV/p/1z69fDBKiw3SNr5jA==
@@ -1603,7 +1613,7 @@
     "@react-native-aria/focus" "^0.2.7"
     react-native-svg "13.4.0"
 
-"@gluestack-ui/utils@latest":
+"@gluestack-ui/utils@*", "@gluestack-ui/utils@latest":
   version "0.1.2"
   resolved "https://registry.npmjs.org/@gluestack-ui/utils/-/utils-0.1.2.tgz"
   integrity sha512-9lqwUN0iOIJdNp12YPxbtLs1c2in4javA9mp/3Y77CucCSyhsHZU1A2Dq/nnt1TvnlPBho3HtxexxISuOWyybQ==
@@ -1906,7 +1916,7 @@
 
 "@react-native-aria/interactions@^0.2.8":
   version "0.2.8"
-  resolved "https://registry.yarnpkg.com/@react-native-aria/interactions/-/interactions-0.2.8.tgz#5ced4bd3391c647699fa79275472f784a44c2488"
+  resolved "https://registry.npmjs.org/@react-native-aria/interactions/-/interactions-0.2.8.tgz"
   integrity sha512-+LsLghBnp1fEVdLdIZGfE2izbZS0GPwc7eyiLHndnAXwXdLmyDRw71UCEjsUuNh7SO7BBR5QjHlk0cTHmyynQg==
   dependencies:
     "@react-aria/interactions" "^3.3.2"
@@ -5964,6 +5974,11 @@ lru-cache@^6.0.0:
   integrity sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==
   dependencies:
     yallist "^4.0.0"
+
+lucide-react-native@^0.129.0:
+  version "0.129.0"
+  resolved "https://registry.yarnpkg.com/lucide-react-native/-/lucide-react-native-0.129.0.tgz#33cfbd305f74ab8966cfdfe73268d07692f6f14b"
+  integrity sha512-q8PCb9antl3FjJoH5Q50OubsL81kiKfzWTb5L3Zqp3l7Izg1NyS1YZxGKxWPPj3cvqIst4++Mzxj/8hx6s/KWA==
 
 make-dir@^2.0.0, make-dir@^2.1.0:
   version "2.1.0"
