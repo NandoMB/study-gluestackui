@@ -2,12 +2,7 @@ import { StyleSheet, ScrollView } from 'react-native';
 import { Icon, Select } from '../../../gluestack/components';
 import { InfoIcon } from 'lucide-react-native';
 
-export default function SelectDefault() {
-  const data = Array(100).fill(0).map((_, index) => ({
-    key: index,
-    label: `Option ${index}`,
-    value: index
-  }));
+export default function SelectDefault({ data }: { data: any[] }) {
   return (
     <Select>
       <Select.ItemList placeholder="Default Select">

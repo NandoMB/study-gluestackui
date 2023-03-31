@@ -3,6 +3,11 @@ import SelectDefault from './SelectDefault';
 import SelectCustom from './SelectCustom';
 
 export default function SelectShowcase({ nextColorModeName, toggleColorMode }: { nextColorModeName: string, toggleColorMode: () => void }) {
+  const data = Array(100).fill(0).map((_, index) => ({
+    key: index + 1,
+    label: `Option ${index + 1}`,
+    value: index + 1
+  }));
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -11,8 +16,8 @@ export default function SelectShowcase({ nextColorModeName, toggleColorMode }: {
           <Text style={styles.title}>{nextColorModeName === 'dark' ? '🌛' : '🌞'}</Text>
         </Pressable>
       </View>
-      <SelectDefault />
-      <SelectCustom />
+      <SelectDefault data={data} />
+      <SelectCustom data={data} />
     </View>
   );
 }

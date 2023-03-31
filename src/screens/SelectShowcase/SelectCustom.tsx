@@ -3,13 +3,7 @@ import { StyleSheet } from 'react-native';
 
 import { Select } from '../../components';
 
-export default function SelectCustom() {
-  const data = Array(100).fill(0).map((_, index) => ({
-    key: index,
-    label: `Option ${index}`,
-    value: index,
-    isDisabled: true
-  }));
+export default function SelectCustom({ data }: { data: any[] }) {
   return (
     <Select
       data={data}
