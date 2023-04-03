@@ -1,5 +1,5 @@
+import { styled } from '../../styled';
 import { View } from 'react-native';
-import { styled } from '@dank-style/react';
 
 export default styled(
   View,

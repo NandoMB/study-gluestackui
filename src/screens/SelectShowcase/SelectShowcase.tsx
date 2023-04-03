@@ -1,6 +1,8 @@
 import { StyleSheet, View, Text, Pressable } from 'react-native';
 import SelectDefault from './SelectDefault';
 import SelectCustom from './SelectCustom';
+import { Button as GSButton } from '../../../gluestack/components';
+import { Button } from '../../components/Button';
 
 export default function SelectShowcase({ nextColorModeName, toggleColorMode }: { nextColorModeName: string, toggleColorMode: () => void }) {
   const data = Array(100).fill(0).map((_, index) => ({

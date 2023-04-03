@@ -1,12 +1,13 @@
 import { Text } from 'react-native';
-import { styled } from '@dank-style/react';
+import { styled } from '../../styled';
 
 export default styled(
   Text,
   {
-    color: '$textLight900',
+    mx: '$2',
     fontSize: '$md',
     fontWeight: '$normal',
+    color: '$textLight900',
     _dark: {
       color: '$textDark50',
     },

@@ -12,7 +12,7 @@ import {
 
 const StyledRoot = styled(GlueStackStyledActionsheetRoot, {}, {});
 const StyledBackdrop = styled(GlueStackStyledActionsheetBackdrop, {
-  bgColor: '$blue600'
+  bgColor: '$blue600_alpha20'
 }, {});
 const StyledItem = styled(GlueStackStyledActionsheetItem, {}, {});
 const StyledItemText = styled(GlueStackStyledActionsheetItemText, {}, {});
