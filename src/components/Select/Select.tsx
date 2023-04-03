@@ -27,7 +27,7 @@ export function Select({ data, placeholder, size = 40, onSelectItem, onClose, cl
   function onCloseActionSheetHandler() {
     onClose && onClose();
     // FIXME:
-    // How can I close the Actionsheet? Where is the controller property to do this?
+    // How can I close the Actionsheet programmatically? Where is the "controller property" to do this?
     // How do I make Actionsheet closes after touch the overlay?
   };
 

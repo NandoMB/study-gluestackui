@@ -41,5 +41,11 @@ export const StyledSelect = createSelect({
   Item: StyledItem,
   ItemList: StyledItemList
 }, {
-  Actionsheet: StyledActionSheet
+  // FIXME: How could I pass my custom Actionsheet?
+  // Actionsheet: ActionSheet,
+
+  // FIXME: The farthest that I could get was doing like this. Only passing some
+  //        custom styles and that's it. I would like to modify some properties
+  //        on my own custom Actionsheet, like in the line 45... Did you got it?
+  Actionsheet: StyledActionSheet,
 });

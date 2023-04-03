@@ -7,7 +7,7 @@ export default function ActionSheetShowcase() {
   const handleClose = () => setShowActionsheet(!showActionsheet)
 
   return (
-    <View style={{  }}>
+    <View style={{}}>
       <Text style={{ color: 'whitesmoke' }}>ActionSheetShowcase</Text>
       <Pressable onPress={handleClose}>
         <Text style={{ color: 'whitesmoke' }}>Open</Text>
